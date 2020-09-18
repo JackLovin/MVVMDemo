@@ -12,8 +12,8 @@ import android.widget.Toast;
  */
 public class MyToats {
 
-    public void  myToast(Context context){
+    public void  myToast(Context context,String content){
 
-        Toast.makeText(context,"csj",Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,content,Toast.LENGTH_SHORT).show();
     }
 }
