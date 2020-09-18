@@ -33,7 +33,7 @@ public abstract class BaseActivity<DB extends ViewDataBinding, VM extends BaseVi
 
         setContentView(getContentViewId());
         mBinding = DataBindingUtil.setContentView(this, getContentViewId());
-//给binding加上感知生命周期，AppCompatActivity就是lifeOwner，之前解释过了，不懂看前面
+          //给binding加上感知生命周期，AppCompatActivity就是lifeOwner
         mBinding.setLifecycleOwner(this);
         //创建我们的ViewModel。
         createViewModel();
